@@ -96,9 +96,6 @@ The website is optimized for:
 
 **Yuvaraj Lodagala**
 
-- GitHub: https://github.com/YOUR_USERNAME
-- LinkedIn: https://www.linkedin.com/in/YOUR_LINKEDIN/
-
 ---
 
 ⭐ If you like this project, give it a Star!
