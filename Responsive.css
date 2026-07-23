@@ -1,0 +1,143 @@
+/* ============================= */
+/* Mobile Responsive (768px)     */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    #logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* Home Section */
+    #home {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .left h1 {
+        font-size: 32px;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
+
+    .left button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .right img {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    /* About Section */
+    #about {
+        padding: 20px;
+    }
+
+    .right-side h2,
+    .left-side h3 {
+        text-align: center;
+    }
+
+    .right-side img {
+        width: 100%;
+    }
+
+    .left-side p,
+    .left-side ul {
+        font-size: 16px;
+    }
+
+    /* Menu */
+    .memu-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .memu-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .memu-card {
+        min-height: auto;
+    }
+
+    /* Special Item */
+    #spl-items {
+        padding: 20px;
+    }
+
+    .spl-card {
+        min-height: auto;
+    }
+
+    .spl-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Gallery */
+    .items-continer {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .itmes img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Reviews */
+    #customer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .customer img {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Booking Form */
+    form {
+        width: 100%;
+    }
+
+    /* Contact */
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+}
