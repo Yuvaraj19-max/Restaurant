@@ -3,107 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee House | Fresh Coffee & Online Orders</title>
-    <link rel="stylesheet" href="./style.css">
-    <meta name="description" content="Coffee House - freshly roasted coffee, simple online ordering and table reservations.">
+    <title>Find Your Place | Restaurant & Table Booking</title>
+    <meta name="description" content="Find Your Place restaurant with menu browsing, online ordering and table booking.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Responsive.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="./images/logo-removebg-preview.png" alt="coffee logo" height="150px" width="150px">
-                <h2>Coffee House</h2> 
-            </div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#menu">Order</a></li>
-                </ul>
-        </nav>
-    </header>
-    <main>
+    <!-- $Navbar -->
+   <header>
+     <nav>
+        <div id="logo">
+            <img src="./images/logo.png" alt="logo" height="100px" width="100px">
+            <h2>FIND YOUR PLACE</h2>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#book">Book</a></li>
+        </ul>
+    </nav>
+     </header>
+    <!-- $Home -->
+      <main>
         <section id="home">
             <div class="left">
-             <h2> ☕Fresh Coffee in Every Cup</h2>
-            <p>Start your day with our freshly brewed coffee.Coffee is a beverage brewed from roasted ground coffee beans, known for its stimulating effects due to its caffeine content. It has a rich history, originating from the Arabian Peninsula and becoming a global commodity. Coffee is produced through a complex process involving the coffee plant, which produces seeds called coffee cherries. We serve freshly roasted coffee...</p>
-            <button ><a href="#menu">Order Now</a></button>
-            <button> <a href="#menu">View menu</a></button>
+                <h1>FIND YOUR PLACE</h1>
+            <p>Delicious food, cozy atmosphere, and unforgettable moments.</p>
+            <p>Enjoy your food with Love, Fresh, Healthy, Tasty  </p>
+            <button><a href="#menu">Explore Menu</a></button>
+            <button> <a href="#book" >Book Table</a></button>
+            </div> 
+            <div class="right">
+                <img src="./images/home-image.avif" alt="home-page-img">
+            </div>
+        </section>
+      </main>
+    <!-- $about -->
+    <section id="about">
+        <div class="right-side">
+            <h2>About US</h2>
+            <img src="./images/about-us.jpg" alt="image of restaurant">
         </div>
-        <div class="right"> 
-            <img src="./images/coffee-1.avif" alt="pic 1" >
-        </div>   
-        </section>
-        <section id="about">
-            <div id="left-side">
-                <h2>About our Coffee Shop</h2>
-            <img src="./images/coffee pic 2.webp" alt="coffee pic">
+        <div class="left-side">
+            <h3>About the Restaurant</h3>
+            <p>🍴 Welcome to Find Your Place,e  
+Step into a world of flavor, comfort, and hospitality. Our restaurant is dedicated to serving dishes that blend tradition with creativity, crafted from the freshest ingredients and seasoned with passion.
+✨ What Makes Us Special
+Authentic Taste – Recipes inspired by heritage, perfected for today’s palate.
+Cozy Ambience – A warm, inviting space to relax, celebrate, or simply enjoy a meal.
+Passionate Service – Our team ensures every guest feels at home.
+🥗 Our Promise  
+Whether it’s a family dinner, a casual hangout, or a special occasion, we make every moment memorable with food that delights and service that cares.</p>
+<ul>
+    ✨ Core Values
+        <li>Quality First – Only the best ingredients, prepared with passion.</li>
+        <li>Hospitality Always – Warm, attentive service that makes every visit special.</li>
+        <li>Community Spirit – A place where friends, families, and neighbors connect.</li>
+    </ul>
+        </div>
+     </section>
+
+    <section id="menu">
+         <h2 class="head">Our menu</h2>
+        <div class="menu-tools">
+            <button class="filter-btn active-filter" data-category="all">All</button>
+            <button class="filter-btn" data-category="pizza">Pizza</button>
+            <button class="filter-btn" data-category="main">Main Course</button>
+            <input id="menu-search" type="search" placeholder="Search menu..." aria-label="Search menu">
+            <span id="cart-summary">Cart: 0 items</span>
+        </div>
+        <div class="memu-container">
+            <div class="memu-card">
+                <img src="./images/Pizza img.webp" alt="Pizza ">
+                <h3>Pizza</h3>
+                <p>Tasty and super</p>
+                <p>249/-</p>
+                 <button>Order now</button>
             </div>
-            <div id="right-side">
-                <h3>About our Coffee Shop</h3>
-                <p>Start your day with the aroma of freshly brewed coffee. Our shop is dedicated to serving premium quality beans, roasted to perfection, ensuring every cup is rich, smooth, and full of flavor. Coffee isn’t just a drink—it’s a tradition that began centuries ago in the Arabian Peninsula and has since become a global passion.</p>
-                <ul>
-                    <li> ✔ Premium Beans</li>
-                    <li> ✔ Organic Coffee</li>
-                    <li> ✔ Fresh Milk</li>
-                    <li>✔ Friendly Staff</li>
-                </ul>
+            <div class="memu-card">
+                <img src="./images/Burger.webp" alt="Burger ">
+                <h3>Pizza</h3>
+                <p>Tasty and super</p>
+                <p>249/-</p>
+                 <button>Order now</button>
             </div>
-        </section> 
-        <section id="menu">
-            <h2 class="head">Our menu</h2>
-            <div class="menu-tools">
-                <button class="filter-btn active-filter" data-category="all">All</button>
-                <button class="filter-btn" data-category="coffee">Coffee</button>
-                <button class="filter-btn" data-category="special">Special</button>
-                <input id="menu-search" type="search" placeholder="Search coffee..." aria-label="Search menu">
-                <span id="cart-summary">Cart: 0 items</span>
+            <div class="memu-card">
+                <img src="./images/Pasta.webp" alt="Pasta ">
+                <h3>Pizza</h3>
+                <p>Tasty and super</p>
+                <p  class="price">249/-</p>
+                 <button>Order now</button>
             </div>
-            <div id="memu-container">
-                <div class="memu-card">
-                    <img src="./images/Espresso.png" alt="ecpresso" height="400px" width="400px">
-                    <h3 style="color: white;"> Espresso </h3>
-                    <p style="color:antiquewhite;">Strong and rich</p>
-                    <p class="price">₹120</p>
-                    <button>Order now</button>
-                </div>
-                <div class="memu-card">
-                    <img src="./images/Cappuccino.png" alt="cappuuu" height="400px" width="400px">
-                    <h3  style="color: white;">Cappuccino </h3>
-                    <p style="color:antiquewhite;">Creamy and Smooth</p>
-                    <p class="price">₹180</p>
-                    <button>Order now</button>
-                </div>
-                 <div class="memu-card">
-                    <img src="./images/Latte1.webp" alt="latte" height="400px" width="400px">
-                    <h3  style="color: white;"> Latte  </h3>
-                    <p style="color:antiquewhite;">Milk and Coffee</p>
-                    <p class="price">₹200</p>
-                    <button>Order now</button>
-                </div>
-            </div>
-        </section>       
-        <section id="features">
-            <h2>OUR SPECIAL COFFEE</h2>
-            <div  class="card">
-                <img src="./images/coffee pre.webp" alt="spl-coffee">
-                <h3>Premium Cappuccino</h3>
-                <p>Made with freshly roasted Arabica beans,steamed milk, and rich creamy foam.Perfect for coffee lovers.</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <p class="price">₹299</p>
-                <button>Order Now</button>
-            </div>
-        </section>
-        <section id="reviews">
+        </div>
+     </section>
+
+    <section id="order-cart" aria-live="polite">
+        <h2>Your Order</h2><div id="cart-items"></div><div id="cart-total">Total: ₹0</div>
+        <button id="clear-cart" type="button">Clear Cart</button>
+    </section>
+
+    <section id="spl-items">
+        <h2>TODAY'S SPECIAL  </h2>
+           <div  class="spl-card">
+        <h3>Chicken Briyani </h3>
+        <img src="./images/delicious-chicken-biryani-png.webp" alt="Chicken briyani">
+        <p>Biryani is one of the most popular dishes in South Asia and among the South Asian diaspora. The dish is often associated with the region's Muslim population in particular,[4] but is nevertheless a mainstream culinary staple embraced by every demographic. Similar dishes are prepared in many other countries, often with local variations, and often brought there by South Asian diaspora populations. Biryani is the most-ordered dish on Indian online food ordering and delivery services, is used in weddings and celebrations throughout the region, and has been described as the most popular dish in India</p>
+        <p class="price">₹299</p>
+        <button>Order Now</button>
+        </div>
+     </section>
+
+    <section id="gallery">
+        <h2>Food Gallery</h2>
+        <div class="items-continer">
+        <div class="itmes">
+            <img src="./images/food-1.png" alt="one-item">
+        </div>
+         <div class="itmes">
+            <img src="./images/imge-2.webp" alt="one-item">
+        </div>
+             <div class="itmes">
+            <img src="./images/img-3.webp" alt=three-item">
+        </div>
+         <div class="itmes">
+            <img src="./images/img-4.webp" alt="four-item">
+        </div>
+         <div class="itmes">
+            <img src="./images/img-5.webp" alt="five-item">
+        </div>
+         <div class="itmes">
+            <img src="./images/img-6.webp" alt="six-item">
+        </div>
+        </div>
+     </section>
+
+    <section id="reviews">
             <h2>What Our Customers Say</h2>
             <div id="customer-container"> 
             <div class="customer">
                 <img src="./images/customer-1.png" alt="Customer pic">
                 <h3>Rahul Sharma </h3>
                 <p>⭐⭐⭐⭐⭐  </p>
-                <p> "Best coffee!"</p>
+                <p> "Tasty Pizza!"</p>
             </div>
              <div class="customer">
                 <img src="./images/customer-2png.png" alt="Customer pic">
@@ -119,37 +163,48 @@
             </div>
             </div>
         </section>
-        <section id="order-cart" aria-live="polite">
-            <h2>YOUR ORDER</h2>
-            <div id="cart-items"></div>
-            <div id="cart-total">Total: ₹0</div>
-            <button id="clear-cart" type="button">Clear Cart</button>
-        </section>
-        <section id="contact">
+
+    <section id="book">
+        <h2>Book A Table</h2>
+        <form>
+                         <label for="name">Name :</label>
+                    <input type="text" id="name">
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" id="phone">
+                    <label for="date">Date: </label>
+                    <input type="date" id="date">
+                    <label for="time">Time: </label>
+                    <input type="time" id="time">
+                    <label for="guest">Guest: </label>
+                    <input type="text" id="guest">
+                    <button>Book Now</button>
+              </form>
+    </section>
+
+      <section id="contact">
             <h2>CONTACT US</h2>
             <div class="contact-container">
                     <div class="left-side">
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                    <label for="message">Message:</label>
-                    <textarea id="message"></textarea>
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email">
+                    <label for="contact-message">Message:</label>
+                    <textarea id="contact-message"></textarea>
                     <button type="submit"> Send Message</button>
-                </form>
             </div>
             <div class="right-side">
                 <h3> Contact Information</h3>
                 <p>📍 Hyderabad</p>
                 <p>📞 +91 9876543210</p>
-                <p>📧 coffeehouse@gmail.com</p>
+                <p>📧 findyourplace@gmail.com</p>
                 <p>🕒 8 AM - 10 PM</p>
             </div>
             </div>
         </section>
+
         <footer>
-            <h2>Coffee House</h2>
+            <h2>Find Your Place Resturant🧑‍🍳</h2>
             <p> Brewing Happiness Since 1999</p>
             <ul>
                   <li><a href="#home">Home</a></li>
@@ -158,12 +213,11 @@
                     <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <p>📧 coffeehouse@gmail.com</p>
+                <p>📧 findyourplace@gmail.com</p>
                 <p>📞 +91 9876543210</p>
                 <p>📍 Hyderabad</p>
-                <p>© 2026 Coffee House. All Rights Reserved.</p>
+                <p>© 2026 Find Your Place. All Rights Reserved.</p>
         </footer>
-    </main>
     <script src="./script.js"></script>
 </body>
 </html>
